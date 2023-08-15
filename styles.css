@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* Basic styling for the page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Lucida Sans, sans-serif;
+    font-size: 1vw;
     background-color: #E8E8E8;
 }
 
@@ -15,12 +17,11 @@ header {
     text-align: center;
     padding: 40px 0;
     background-color: transparent;
-    opacity: 0.2;
-    color: #333;
     opacity: 0.8;
-    width: 100%;
+    color: #333;
+    width: 100vw;
     position: fixed;
-    max-height: 100px;
+    max-height: 10%;
     display: inline-block;
 }
 
@@ -55,10 +56,16 @@ nav {
     }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 100vw;
     padding: 20px;
     background-color: #E8E8E8;
+    position: center;
+    display: grid;
+    justify-content: center;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
 }
 
 footer {
@@ -72,23 +79,25 @@ footer {
     color: white;
 }
 
-#about, #projects, #resume, #contact{
-    height: 720px;
-    width: 100%;
+#about, #projects, #resume, #contact, #intro, #dprj {
+    height: 120vh;
+    width: fit-content;
+    max-width: 65vw;
     display: grid;
     place-items: center;
+    position: center;
+    margin: 0 auto;
 }
 
 .card {
     background-color: #E8E8E8;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 200px;
-    margin-bottom: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: center;
-    /*transform: translateX(200%);
-    transition: transform 0.4s ease; */
+    display: grid;
+    align-items: center;
+    max-width: 50vw;
 }
 
 .card:nth-of-type(even){
@@ -103,16 +112,13 @@ footer {
     background-color: #E8E8E8;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 200px;
-    margin-bottom: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: center;
-    /*transform: translateX(200%);
-    transition: transform 0.4s ease;*/
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 2fr;
     column-gap: 50px;
+    max-width: 50vw;
 }
 
 .about-card:nth-of-type(even) {
@@ -127,40 +133,42 @@ footer {
     background-color: #E8E8E8;
     border-radius: 10px;
     padding: 20px;
-    margin-left: -200px;
-    margin-top: 200px;
-    margin-bottom: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: center;
-    max-width: 1080px;
+    align-items: center;
+    max-width: 75vw;
 }
 
 .work-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5%;
 }
 
     .work-gallery img {
-        max-width: 100%;
-        max-height: 100%;
-        margin-bottom: 1px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 3%;
     }
 
+img {
+    width: 100%;
+    height: 100%;
+}
 
 
 .flip-card {
     background-color: transparent;
-    width: 500px;
-    height: 400px;
+    width: 30vw;
+    height: 50vh;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* 3D effect */
     display: inline-block;
-    position:center;
+    position: center;
 }
 
-/* This container is needed to position the front and back side */
+/*position the front and back side */
 .flip-card-inner {
     position: center;
     width: 100%;
@@ -170,12 +178,12 @@ footer {
     transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/*horizontal flip when mouse over*/
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+/* Position front and back side */
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -184,13 +192,13 @@ footer {
     backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+/* Style front (fallback if image is missing) */
 .flip-card-front {
     background-color: #bbb;
     color: black;
 }
 
-/* Style the back side */
+/* Style back  */
 .flip-card-back {
     background-color: #555555;
     color: white;
@@ -212,13 +220,15 @@ footer {
 
 .about-img {
     border-radius: 20%;
-    height: 400px;
+    width: 100%;
+    height: auto;
     display: grid;
     justify-content: left;
 }
 
 .floating-text {
     animation: floatAnimation 2.5s ease-in-out infinite;
+    overflow-wrap: break-word;
 }
 
 @keyframes floatAnimation {
@@ -231,5 +241,51 @@ footer {
     }
 }
 
+.p{
+    font-size: 5vw;
+    max-width:fit-content;
+    overflow: scroll;
+}
+
+/* Add media query for mobile devices */
+@media (max-width: 768px) {
+    header {
+        width: 100vw;
+        padding: 10px 0;
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+        nav a {
+            padding: 5px 10px;
+        }
+
+    main {
+        padding: 10px;
+        background-image: none;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    #about, #projects, #resume, #contact, #intro, #dprj {
+        height: 120vh;
+        width: fit-content;
+        max-width: 65vw;
+        max-height: 1000px;
+    }
+
+    img, .flip-card, .card, .about-card {
+        max-height: 200px;
+    }
+
+    .about-card {
+        display:flex;
+        
+    }
+}
 
 
