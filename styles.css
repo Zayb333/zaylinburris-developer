@@ -2,31 +2,70 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
+@font-face {
+    font-family: 'francise'; /* Give your font a name */
+    src: url('./franchise/Franchise-Free-Bold.ttf') format('ttf'); /* Path to your font file */
+    /* You can include additional src properties for different font formats (e.g., woff, ttf, eot) */
+  }
 
-/* Basic styling for the page */
+  .p-txt-dev{
+    font-style:italic;
+    font-size: 2vw;
+    margin-top: 2vh;
+    text-align: center;
+    color: azure;
+  }
+  .p-txt{
+    color: white;
+    font-size: 1.2vw;
+    margin-top: 7%;
+  }
+  .h-txt{
+    color: white;
+    font-size: 4vw;
+  }
+
+/* Styling for the page */
 body {
-    font-family: Lucida Sans, sans-serif;
-    font-size: 1vw;
-    background-color: #E8E8E8;
+    font-family: 'francise', Lucida Sans, sans-serif;
+    background-image: url("background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
 }
 
+.topcontrols{
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    justify-content: left;
+    max-width: 2px;
+    z-index: 2;
+    background-color: transparent;
+}
+.logo-img{
+    height: auto;
+    width: 100px;
+    background-color: transparent;
+}
 header {
     text-align: center;
-    padding: 40px 0;
+    padding: 0;
     background-color: transparent;
     opacity: 0.8;
     color: #333;
-    width: 100vw;
-    position: fixed;
-    max-height: 10%;
+    width: 100%;
+    max-height: 7%;
     display: inline-block;
+    z-index: 1;
 }
-
 nav {
-    background-color: #f0f0f0;
+    background-color: #333;
     padding: 10px 0;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -34,14 +73,14 @@ nav {
 
     nav a {
         text-decoration: none;
-        color: #333;
+        color: #fff;
         padding: 10px 20px;
         transition: background-color 0.3s, color 0.3s;
     }
 
         nav a:hover {
-            background-color: #333;
-            color: #fff;
+            background-color: #f6f6f6f6;
+            color: #212121;
         }
 
 /* Center the navigation links */
@@ -52,73 +91,95 @@ nav {
 
     /* Add a border to separate links */
     nav a:not(:last-child) {
-        border-right: 1px solid #ccc;
+        /*border-right: 1px solid #ccc;*/
     }
+
+
+h5{
+    color: white;
+    font-size:larger;
+}
+/*Name/Title*/
+h4{
+    color: white;
+    width: 100%;
+    font-size: 15vw;
+    text-align: center;
+}
+h6{
+    color: white;
+    width: 100%;
+    font-size: 5vw;
+    text-align: center;
+}
+.white-p{
+    color: white;
+}
 
 main {
     max-width: 100vw;
-    padding: 20px;
-    background-color: #E8E8E8;
     position: center;
-    display: grid;
     justify-content: center;
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment:fixed;
+    
 }
 
 footer {
-    position: fixed; 
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
+    background-color: #3336;
     color: white;
 }
 
-#about, #projects, #resume, #contact, #intro, #dprj {
-    height: 120vh;
-    width: fit-content;
-    max-width: 65vw;
+.about-txt1{
+    word-wrap: break-word; 
+    width: 45%; 
+    align-self: center; 
+    vertical-align: auto;
+}
+
+#about, #projects, #contact, #intro, #dprj {
+    height: 90vh;
+    max-width: 100vw;
     display: grid;
     place-items: center;
+    align-items: center;
+    justify-content: center;
     position: center;
     margin: 0 auto;
 }
 
+#about, #projects, #dprj {
+    background-color: rgba(0, 0, 0, 0.682);
+}
+#dprj{
+    margin-top: 1%;
+}
+#resume{
+    width: 15vw;
+    align-self: center;
+}
 .card {
-    background-color: #E8E8E8;
+    background-color: transparent;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: center;
-    display: grid;
+    display: flex;
     align-items: center;
-    max-width: 50vw;
-}
-
-.card:nth-of-type(even){
-    transform: translateX(-200%);
-}
-
-.card.show{
-    transform: translateX(0);
+    width: 52%;
+    height: 15vh;
+    flex-wrap: wrap;
 }
 
 .about-card {
-    background-color: #E8E8E8;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: center;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 50px;
-    max-width: 50vw;
+    background-color: transparent;
+    border-radius: 1%;
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
 }
 
 .about-card:nth-of-type(even) {
@@ -128,15 +189,96 @@ footer {
 .about-card.show {
     transform: translateX(0);
 }
+.about-img {
+    border-radius: 10%;
+    height: 80%;
+    width: auto;
+    display: grid;
+    justify-content: left;
+    position: absolute;
+    top: 50%; /* Move to 50% from the top */
+    left: 50%; /* Move to 50% from the left */
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: -1;
+}
+
+.title-txt{
+    margin-top: 10%;
+}
+.floating-text {
+    padding-top: 5%;
+    width: 100%;
+    background-color: #383838c3;
+    /*animation: floatAnimation 2.5s ease-in-out infinite;*/
+    overflow-wrap: break-word;
+    align-items: center;
+    height: 30vh;
+}
+.floating-text1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    width: 100%;
+    background-color: #383838c3;
+    /*animation: floatAnimation 2.5s ease-in-out infinite;*/
+    overflow-wrap: break-word;
+    align-items: center;
+    height: 30vh;
+}
+.floating-text3 {
+    padding-top: 5%;
+    width: 100%;
+    background-color: #383838c3;
+    /*animation: floatAnimation 2.5s ease-in-out infinite;*/
+    overflow-wrap: break-word;
+    align-items: center;
+    height: 25vh;
+}
+.aboutme-card {
+    background-color: transparent;
+    border-radius: 1%;
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+}
+.about-img1 {
+    border-radius: 50%;
+    height: 60vh;
+    width: auto;
+    justify-content: center;
+    z-index: 0;
+}
 
 .prj-card {
-    background-color: #E8E8E8;
-    border-radius: 10px;
+    padding: 20px;
+    position: center;
+    align-items: center;
+    width: 90vw;
+    margin-top: 5%;
+}
+
+.info-card {
+    background-color: #eeececf3;
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: center;
-    align-items: center;
-    max-width: 75vw;
+    width: 20vw;
+    place-self: center;         
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+}
+
+.vert-scrolling-wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+    height: 74vh;
 }
 
 .work-gallery {
@@ -152,11 +294,10 @@ footer {
         margin-bottom: 3%;
     }
 
-img {
+/*img {
     width: 100%;
     height: 100%;
-}
-
+}*/
 
 .flip-card {
     background-color: transparent;
@@ -205,30 +346,19 @@ img {
     transform: rotateY(180deg);
 }
 
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-
+.imgPrj{
+    height: 50vh;
+    width: auto;
+}
+.img3D{
+    height: 50vh;
 }
 
-.vert-scrolling-wrapper {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    white-space: nowrap;
-}
-
-.about-img {
-    border-radius: 20%;
-    width: 100%;
-    height: auto;
-    display: grid;
-    justify-content: left;
-}
-
-.floating-text {
-    animation: floatAnimation 2.5s ease-in-out infinite;
-    overflow-wrap: break-word;
+#resume{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 @keyframes floatAnimation {
@@ -249,9 +379,29 @@ img {
 
 /* Add media query for mobile devices */
 @media (max-width: 768px) {
+    .logo{
+        justify-content: center;
+        max-width: 1px;
+    }
+    .logo-img{
+        height: auto;
+        width: 70px;
+        background-color: transparent;
+    }
+    .navname{
+        visibility: hidden;
+    }
+    body {
+        font-family: 'francise', Lucida Sans, sans-serif;
+        background-image: url("background1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment:fixed;
+        background-color: black;
+        background-position: bottom;
+    }
     header {
         width: 100vw;
-        padding: 10px 0;
     }
 
     nav {
@@ -260,10 +410,11 @@ img {
 
         nav a {
             padding: 5px 10px;
+            width: auto;
         }
 
     main {
-        padding: 10px;
+        padding: 2px;
         background-image: none;
     }
 
@@ -271,15 +422,107 @@ img {
         padding: 10px 0;
     }
 
-    #about, #projects, #resume, #contact, #intro, #dprj {
-        height: 100vh;
+    /*Hello World*/
+    .h-txt{
+        color: white;
+        font-size: 5vw;
+      }
+    .p-txt-dev{
+        font-size: 2.8vw;
+        margin-top: 1.5vh;
+      }
+      .p-txt{
+        font-size: 3vw;
+        margin-top: 7%;
+      }
+      
+
+    
+
+    #resume, #contact {
+        height: 60vh;
         width: fit-content;
         max-width: 98vw;
     }
-
-    img, .flip-card {
-        max-height: 200px;
+    #dprj{
+        height: 40vh;
     }
+    #projects{
+        height: auto;
+    }
+    #intro{
+        height: 54vh;
+    }
+    .about-img {
+        border-radius: 10%;
+        height: 50%;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        top: 29%; /* Move to 50% from the top */
+        left: 50%; /* Move to 50% from the left */
+        transform: translate(-50%, -50%); /* Center the image */
+        z-index: -1;
+    }
+    .floating-text {
+        padding-top: 5%;
+        width: 100%;
+        background-color: #383838c3;
+        /*animation: floatAnimation 2.5s ease-in-out infinite;*/
+        overflow-wrap: break-word;
+        align-items: center;
+        height: 10vh;
+    }
+    .floating-text1 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: grid;
+        height: auto;
+        align-items: center;
+        align-content: space-evenly;
+    }
+    .floating-text3{
+        height: 6vh;
+    }
+    .about-img1-container {
+        display: flex;
+        justify-content: center;
+        height: 30vh;
+        width: auto;
+    }
+    .about-img1 {
+        border-radius: 10%;
+        width: auto;
+        height: 100%;
+        z-index: 0;
+    }
+    .about-txt1 {
+        width: 60vw;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #about{
+        height: 30vh;
+        width: fit-content;
+        max-width: 98vw;
+        z-index: -1;
+    }
+    .aboutme-card {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 97vw;
+        position: relative;
+        margin-left: 6%;    
+    }
+    #resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 5vh;
+    }
+
     .about-card {
         display: flex;
         flex-direction: column;
@@ -291,8 +534,22 @@ img {
         width: 98vw;
     }
 
-    .card, .about-card, .prj-card{
-        
+    .card{
+        width: auto;
+        height: auto;
+        padding: 3px;
+        justify-self: center;
+    }
+    .info-card{
+        width: 95%;
+        margin: 3%;
+    }
+    .imgPrj{
+        height: 20vh;
+        width: auto;
+    }
+    .img3D{
+        height: 20vh;
     }
 
     @keyframes floatAnimation {
@@ -305,10 +562,6 @@ img {
         }
     }
 
-    .about-img{
-        width:50%;
-        margin: 0 auto;
-    }
 }
 
 

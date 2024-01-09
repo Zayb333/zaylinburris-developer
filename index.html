@@ -10,122 +10,147 @@
 </head>
 <body>
 
-    <div style="display:inline-block;position:fixed;">
-        <div style="display:inline-block;justify-content:left;max-width:2px;">
-            <img src="ZaylinBurris_Logo.png" style="height:auto;width:100px;background-color:transparent;" />
+    <div class="topcontrols">
+        <div class="logo">
+            <img class="logo-img" src="ZaylinBurris_Logo.png"/>
         </div>
-        <header style="position:center;">
-
-            <div style="display:inline-block;">
-                <h2>Zaylin Burris</h2>
-                <p>Developer, Designer, &amp; Creative</p>
+        <header>
                 <nav>
-                    <a href="#intro">Zaylin Burris</a>
+                    <a href="#intro" class="navname">Zaylin Burris</a>
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#dprj">3D Renderings & Animations</a>
                     <a href="#resume">Resume</a>
-                    <a href="#contact">Contact</a>
                 </nav>
-            </div>
         </header>
     </div>
     
 
     <main>
         <section class="intro" id="intro" >
-            <div class="about-card">
-                <div>
-                    <img class="about-img" src="intro.png" alt="Avatar" />
+            <div class="about-card">               
+                <div class="about-img-container">
+                    <img class="about-img" src="intro.png" alt="Avatar"/>
                 </div>
-                <div class="floating-text">
-                    <h2>Hi, I'm Zaylin Burris</h2>
-                    <p>A Software Developer</p>
-                    <p style="font-style:italic;font-size:0.7vw;margin-top:2vh;">"Work hard in silence, let success be your noise."</p>                  
-                </div>
+                <div class="title-txt" style="display: flex;flex-direction: column;justify-content: center;">
+                    <h4>Zaylin Burris</h4>                     
+                </div>               
             </div>
         </section>
+        <div class="floating-text">                                    
+            <h6>A Software Developer</h6>
+            <p class="p-txt-dev">"Let success be your noise."</p>         
+        </div>
 
         <section class="about" id="about">
-            <div class="about-card">
-                <div>
-                    <img class="about-img" src="headshot.png" alt="Avatar" />
-                </div>
-                <div style="word-wrap:break-word;">
-                    <h2>About Me</h2>
-                    <p>
+            <div class="aboutme-card">
+                <div class="about-img1-container">
+                    <img class="about-img1" src="headshot.png" alt="Avatar"/>
+                </div>               
+                <div class="about-txt1" >
+                    <h2 class="h-txt">Hello World,</h2>
+                    <p class="p-txt">
                         I’m Zaylin Burris, a dedicated and self-motivated,
-                        software engineer with a proven ability to plan, design,
-                        and develop software automation applications that are scalable,
-                        maintainable, and cost-saving. An insightful developer, creating
-                        both modern and sensible UIs for efficient use by end users,
-                        as well as highly robust back-end systems to ensure accuracy of execution.
-                        As an innovative and streamlined leader, I help to facilitate effective
-                        collaboration and development within a team. A fast learner
-                        with a strong work ethic, progressive mindset,
-                        and a burning desire for success.
+                        software engineer. <br>Innovative, Impactful, and knowledgable.                   
                     </p>
+                    <section class="resume" id="resume">
+                        <div class="card">
+                            <div class="scrolling-wrapper" style="justify-content: left;">
+                            <p class="white-p">
+                                <a class="white-p" href="Resume.pdf" target="_blank" style="font-size: 2.5vw;">
+                                    Resume
+                                </a>
+                            </p>
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <div class="scrolling-wrapper" style="justify-content: left;">
+                            <p class="white-p">
+                                <a class="white-p" href="https://www.linkedin.com/in/zaylin-burris-364a1b287/"
+                                   target="_blank" style="font-size: 2.5vw;">Contact</a>
+                            </p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-
             </div>
         </section>
 
-        <section class="work" id="projects">
-            <div class="prj-card" style="position:center;">
-                <h2>Software Projects</h2>
-                <div class="scrolling-wrapper">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="mm6.png" alt="Avatar" style="width:40%;height:100%;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Web App for Client Scheduling </h1>
-                                <p>An web-based application for small business client scheduling</p>
-                                <p>Role: Lead Designer and Developer</p>
-                                <p>Language: HTML, JavaScript, CSS</p>
-                                <div class="scrolling-wrapper">
-                                    <div class="img">
-                                        <img src="mm1.png" style="height:250px;width:120px;" />
-                                        <img src="mm2.png" style="height:250px;width:120px;" />
-                                        <img src="mm3.png" style="height:250px;width:120px;" />
-                                        <img src="mm4.png" style="height:250px;width:120px;" />
-                                        <img src="mm5.png" style="height:250px;width:120px;" />
-                                        <img src="mm6.png" style="height:250px;width:120px;" />
-                                        <img src="mm7.png" style="height:250px;width:120px;" />
-                                    </div>
+        <div class="floating-text1">                                    
+            <div class="info-card">
+                <h1 style="text-align: center;">Languages</h1>
+                <p style="text-align: center;">I write code using these</p>
+                <div class="info-card" style="width: 100%;height: auto;background-color: white;">
+                    <p style="text-align: center;">•c# / .net</p>
+                    <p style="text-align: center;">•html, javascript, css</p>
+                    <p style="text-align: center;">•python</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <h1 style="text-align: center;">Skills</h1>
+                <p style="text-align: center;">Things i'm pretty good at</p>
+                <div class="info-card" style="width: 100%;height: auto;background-color: white;">
+                    <p style="text-align: center;">•c# / .net</p>
+                    <p style="text-align: center;">•html, javascript, css</p>
+                    <p style="text-align: center;">•python</p>
+                </div>
+            </div> 
+            <div class="info-card">
+                <h1 style="text-align: center;">Experience</h1>
+                <p style="text-align: center;">This is what I do</p>
+                <div class="info-card" style="width: 100%;height: auto;background-color: white;">
+                    <p style="text-align: center;">•c# / .net</p>
+                    <p style="text-align: center;">•html, javascript, css</p>
+                    <p style="text-align: center;">•python</p>
+                </div>
+            </div>    
+        </div>
+
+        <section class="work" id="projects" >
+            <div class="prj-card" style="position:center; background-color: rgba(35, 35, 35, 0.141);">
+                <h2 style="text-align: center; color: white; font-size: 2vw;">
+                    Software Projects
+                </h2>
+                <div class="vert-scrolling-wrapper">
+                    <div class="prj-card">
+                        <h1 class="white-p">Web App for Client Scheduling </h1>
+                            <p class="white-p">An web-based application for small business client scheduling</p>
+                            <p class="white-p">Role: Lead Designer and Developer</p>
+                            <p class="white-p">Language: HTML, JavaScript, CSS</p>
+                            <div class="scrolling-wrapper">
+                                <div class="img">
+                                    <img src="mm6.png" class="imgPrj"/>
+                                    <img src="mm1.png" class="imgPrj" />
+                                    <img src="mm2.png" class="imgPrj" />
+                                    <img src="mm3.png" class="imgPrj" />
+                                    <img src="mm4.png" class="imgPrj" />
+                                    <img src="mm5.png" class="imgPrj" />
+                                    <img src="mm7.png" class="imgPrj" />
                                 </div>
                             </div>
-                        </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="MainScreen.PNG" alt="Avatar" >
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>IONet Calculator</h1>
-                                <p style="max-width:10%">
+                    <div class="prj-card">
+                        <h1 class="white-p">IONet Calculator</h1>
+                                <p class="white-p" style="max-width:10%">
                                     The IONet HeatAndPower Calculator is a calculation automation software
                                     that calculates heat and load,
                                     and memory buffers per frame for any given electrical cabinets.
                                     The application queries data through an API, allowing communication with the parent application.
                                 </p>
-                                <p>Role: UI Designer, Backend Architech, Lead Developer</p>
-                                <p>Collaboration: Quest Global Engineering, GE Vernova</p>
+                                <p class="white-p">Role: UI Designer, Backend Architech, Lead Developer</p>
+                                <p class="white-p">Collaboration: Quest Global Engineering, GE Vernova</p>
                                 <div class="scrolling-wrapper">
                                     <div class="img">
-                                        <img src="HeatPowerCalc.PNG" />
-                                        <img src="HeatPowerLoading.PNG" />
-                                        <img src="HeatPowerLoading2.PNG" />
-                                        <img src="IONetLoading1.PNG" />
-                                        <img src="IONetLoading4.PNG" />
-                                        <img src="IONetSaveReport.PNG" />
-                                        <img src="ReportSummary.PNG" />
+                                        <img src="MainScreen.png" class="imgPrj">
+                                        <img src="HeatPowerCalc.png" class="imgPrj"/>
+                                        <img src="HeatPowerLoading.png" class="imgPrj"/>
+                                        <img src="HeatPowerLoading2.png" class="imgPrj"/>
+                                        <img src="IONetLoading1.png" class="imgPrj"/>
+                                        <img src="IONetLoading4.png" class="imgPrj"/>
+                                        <img src="IONetSaveReport.png" class="imgPrj"/>
+                                        <img src="ReportSummary.png" class="imgPrj"/>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div>        
                     </div>
                     <!--
     <div class="flip-card">
@@ -139,53 +164,41 @@
             </div>
         </div>
     </div>-->
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="MainWindow_New.PNG" alt="Avatar" style="width:100%;height:100%;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>IO Process Tool</h1>
-                                <p>
+                    <div class="prj-card">
+                        
+                        <h1 class="white-p">IO Process Tool</h1>
+                                <p class="white-p">
                                     IO Process Tool is a collection of database and algorithmic tools utilized for customer fulfillment projects.
                                     The tool provides excel templates to be used as input for over a dozen possible software services, including
                                     data validation, database imports, database modifications, as well as services which automate various engineering
                                     tasks. The application outputs different forms of excel reports, each tailored to the specific service being used.
                                 </p>
-                                <p>Role: UI Designer, Backend Architech, Lead Developer</p>
-                                <p>Collaboration: Quest Global Engineering, GE Vernova</p>
+                                <p class="white-p">Role: UI Designer, Backend Architech, Lead Developer</p>
+                                <p class="white-p">Collaboration: Quest Global Engineering, GE Vernova</p>
                                 <div class="scrolling-wrapper">
                                     <div class="img">
-                                        <img src="SelectedProj_Projects.PNG" style="width:100%;height:100%;"/>
-                                        <img src="MainWindow_New.PNG" style="width:100%;height:100%;"/>
-                                        <img src="AddProj.PNG" style="width:100%;height:100%;"/>
-                                        <img src="Updates.PNG" style="width:100%;height:100%;"/>
-                                        <img src="Import.PNG" style="width:100%;height:100%;"/>
+                                        <img src="MainWindow_New.png" class="imgPrj">
+                                        <img src="SelectedProj_Projects.png" class="imgPrj"/>
+                                        <img src="AddProj.png" class="imgPrj"/>
+                                        <img src="Updates.png" class="imgPrj"/>
+                                        <img src="Import.png" class="imgPrj"/>
                                     </div>
                                 </div>
 
-                            </div>
-                        </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="OptionSelector.PNG" alt="Avatar" style="width:100%;height:100%;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Option Selector</h1>
-                                <p>A database driven UI control</p>
-                                <p>Dynamically created and user interactive</p>
-                                <p>Role: UI Designer, Software Developer</p>
-                                <p>Collaboration: Quest Global Engineering, GE Vernova</p>
+                    <div class="prj-card">
+                        <h1 class="white-p">Option Selector</h1>
+                                <p class="white-p">A database driven UI control</p>
+                                <p class="white-p">Dynamically created and user interactive</p>
+                                <p class="white-p">Role: UI Designer, Software Developer</p>
+                                <p class="white-p">Collaboration: Quest Global Engineering, GE Vernova</p>
                                 <div class="scrolling-wrapper">
                                     <div class="img">
-                                        <img src="OptionSelector.PNG" style="width:100%;height:100%;" />
-                                        <img src="OptionSelector2.PNG" style="width:100%;height:100%;" />
+                                        <img src="OptionSelector.png" class="imgPrj">
+                                        <img src="OptionSelector.png" class="imgPrj" />
+                                        <img src="OptionSelector2.png" class="imgPrj" />
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div>    
                     </div>
                 </div>
             </div>
@@ -193,48 +206,39 @@
 
         <section class="dprj" id="dprj">
             <div class="prj-card">
-                <h2>3D Rendering And Animations</h2>
+                <h2 style="text-align: center; color: white; font-size: 2vw;">
+                    3D Rendering And Animations
+                </h2>
                 <div class="scrolling-wrapper">
                     <div class="img">
-                        <img src="1.jpg" style="height:50vh"/>
-                        <img src="2.jpg" style="height:50vh"/>
-                        <img src="3.jpg" style="height:50vh"/>
-                        <img src="4.jpg" style="height:50vh"/>
-                        <img src="5.jpg" style="height:50vh"/>
-                        <img src="6.jpg" style="height:50vh"/>
-                        <img src="7.jpg" style="height:50vh"/>
-                        <img src="8.jpg" style="height:50vh"/>
-                        <img src="9.jpg" style="height:50vh"/>
-                        <img src="10.jpg" style="height:50vh"/>
+                        <img src="1.jpg" class="img3D"/>
+                        <img src="2.jpg" class="img3D"/>
+                        <img src="3.jpg" class="img3D"/>
+                        <img src="4.jpg" class="img3D"/>
+                        <img src="5.jpg" class="img3D"/>
+                        <img src="6.jpg" class="img3D"/>
+                        <img src="7.jpg" class="img3D"/>
+                        <img src="8.jpg" class="img3D"/>
+                        <img src="9.jpg" class="img3D"/>
+                        <img src="10.jpg"class="img3D"/>
                     </div>
                 </div>
-                <h2>"StudioBot"</h2>
-                <p>StudioBot is designed, modelled, rendered, and animated by Zaylin Burris using Autodesk Maya, Adobe Photoshop, and Adobe Premier Pro</p>
-            </div>
-        </section>
-
-        <section class="resume" id="resume">
-            <div class="card">
-                <h2>Resume</h2>
-                <p>
-                    <a href="Resume.pdf" target="_blank">
-                        ZaylinBurrisResume Download
-                    </a>
+                <h2>
+                    "StudioBot"
+                </h2>
+                <p style="text-align: center; color: white; font-size: 1.2vw;">
+                    StudioBot is designed, modelled, rendered, 
+                    and animated by Zaylin Burris using 
+                    Autodesk Maya, Adobe Photoshop, and Adobe Premier Pro
                 </p>
             </div>
         </section>
 
-        <section class="contact" id="contact" style="position:center;">
-            <div class="card" >
-                <h1>Contact</h1>
-                <p>Email: zaylinburris@gmail.com</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/zaylin-burris-364a1b287/"
-                       target="_blank">LinkedIn</a>
-                </p>
-            </div>
-        </section>
-
+        <div class="floating-text3">
+            <h2 class="white-p" style="text-align: center; font-size: 2.2vw; font-style: italic; vertical-align: auto;">
+                "He who is not courageous enough to take risks will accomplish nothing in life."
+            </h2>
+        </div>
     </main>
 
     <footer>
