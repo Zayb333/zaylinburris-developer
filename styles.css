@@ -264,7 +264,8 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: center;
     width: 20vw;
-    place-self: center;         
+    height: 100%;
+    place-self: center;       
 }
 
 .scrolling-wrapper {
@@ -536,12 +537,13 @@ footer {
 
     .card{
         width: auto;
-        height: auto;
+        height: 4vh;
         padding: 3px;
         justify-self: center;
     }
     .info-card{
-        width: 95%;
+        height: 30vh;
+        width: 90%;
         margin: 3%;
     }
     .imgPrj{
