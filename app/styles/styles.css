@@ -47,7 +47,13 @@ body {
     background-position-x: bottom;
 }
 
-    
+canvas {
+    display: flex;
+    z-index: -55;
+    display: flex;
+    top: 0;
+    left: 0;
+}   
 
 .topcontrols {
     display: flex;
@@ -98,16 +104,15 @@ nav {
 }
 
     nav a {
-        
         text-decoration: none;
-        color: #fff;
+        color: rgba(256, 256, 256, 0.9);
         padding: 10px 20px;
-        transition: background-color 0.3s, color 0.3s;
+        transition: background-color 0.8s, color 0.8s;
     }
 
         nav a:hover {
-            background-color: #f6f6f6f6;
-            color: #212121;
+            background-color: rgba(256, 256, 256, 0.09);
+            color: #646464;
         }
 
     /* Add a border to separate links */
@@ -202,7 +207,7 @@ footer {
 }
 
 #about, #projects, #dprj {
-    background-color: rgba(0, 0, 0, 0.682);
+    background-color: rgba(0, 0, 0, 0.282);
 }
 #dprj{
     margin-top: 1%;
@@ -307,7 +312,7 @@ footer {
         right: 11vw;
         width: 100%;
         height: 100vh; 
-        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.034) 40%, rgba(255, 255, 255, 0.074) 90%);
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.014) 40%, rgba(255, 255, 255, 0.074) 90%);
     }
     .d-cont:after {
         content: "";
@@ -416,7 +421,7 @@ footer {
 }
 
 .prjFaceCard {
-    padding: 1vw;
+    padding: 0.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -452,7 +457,7 @@ footer {
     }
 
 .prjFaceCard-Container {
-    padding: 20px;
+    padding: 1vw;
     position: center;
     align-items: center;
     width: 96vw;
@@ -460,6 +465,11 @@ footer {
     z-index: 3;
 }
 
+    .prjFaceCard-Container h2 {
+        color: white;
+        font-size: 6vw;
+        text-align: center;
+    }
     .prjFaceCard-Container .white-p {
         height: 3vh;
         width: 50vw;
@@ -701,7 +711,7 @@ footer {
         content: "•c# \A    -asp.net \A    -razor pages \A -wpf \A\A •vanilla javascript \A    -express.js \A  -three.js \A    -alpine.js \A   -jQuery \A  -React.js \A    -css \A\A •python \A    -pandas \A   -numPy \A\A •c \A •c++ \A\A •visual basic for applications";
         height: 90%;
         padding-left: 4%;
-        padding-top: 15%;
+        padding-top: 25%;
         overflow-x: auto;
         white-space: pre-line;
     }
@@ -758,10 +768,10 @@ footer {
     }
 
     .card2:hover:after {
-        content: "•Proficient knowledge and experience in many programming languages, sql databases, and coding tools\A\A•Creative and Accurate Visual Programming, Data Display, and Modeling\A\A•Strong professional and management skills through experience";
+        content: "•web development\A\A•desktop application development\A\A•backend development\A\A•frontend development\A\A•interactive and responsive design/development\A\A•3d development\A\A•texturing & animation\A\A•app design\A\A•effective customer communication for requiements gathering, ideas generation, solution planning, progress updates, and solution deployment";
         height: 90%;
         padding-left: 4%;
-        padding-top: 15%;
+        padding-top: 25%;
         overflow-x: auto;
         white-space: pre-line;
     }
@@ -817,10 +827,10 @@ footer {
     }
 
     .card3:hover:after {
-        content: "•Creates, owns and maintains large-scale relational databases in SQL and MS Access. \A\A •Data system owner in Gas Turbine Technology Lab for combustion testing, gathering US Government export-controlled data for gas turbine combustion research & development. \A\A •Constantly expanding my knowledge and experience through personal projects, building software solutions for everyday use by myself and friends.";
+        content: "•creating automation software for gas turbine power plants\A\A•building web apps/websites with javascript and asp.net\A\A•deploying and managing web apps in azure\A\A•scrum master/team lead\A\A•development lead\A\A•project lead\A\A•data system owner gathering export controlled data for gas turbine combustion r&d";
         height: 90%;
         padding-left: 4%;
-        padding-top: 15%;
+        padding-top: 20%;
         overflow-x: auto;
         white-space: pre-line;
     }
@@ -953,6 +963,22 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Add media query for mobile devices */
 @media (max-width: 768px) {
     .logo{
@@ -1023,6 +1049,9 @@ footer {
         font-size: 12vw;
         text-align: center;
     }
+        .title-txt .p-txt {
+            font-size: 4vw;
+        }
 
     .d-cont {
         width: 100%;
@@ -1031,6 +1060,7 @@ footer {
         .d-cont::before {
             top: 0;
             right: 0;
+            height: 92vh;
         }
 
         .d-cont:after {
@@ -1048,16 +1078,26 @@ footer {
         height: 5vh;
     }
 
+    .vert-scrolling-wrapper{
+        justify-content: center;
+        height: 75vh;
+    }
+
     .prjFaceCard-Container {
+        margin-top: 13vh;
         width: 100vw;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .prjFaceCard {
-        width: 85vw;
+        width: 88vw;
+        height: fit-content;
     }
 
     .prjFaceCard img{
-        width: 85vw;
+        width: 88vw;
         height: auto;
     }
 
@@ -1086,7 +1126,7 @@ footer {
         height: 40vh;
     }
     #intro{
-        height: 54vh;
+        height: 92vh;
     }
     .about-img {
         border-radius: 10%;
@@ -1100,15 +1140,17 @@ footer {
         z-index: -1;
     }
     .floating-text {
+        margin-top: 7%;
         padding-top: 5%;
         width: 100%;
         background-color: #383838c3;
         /*animation: floatAnimation 2.5s ease-in-out infinite;*/
         overflow-wrap: break-word;
         align-items: center;
-        height: 10vh;
+        height: 14vh;
     }
     .floating-text1 {
+        margin-top: 7%;
         padding-top: 5%;
         padding-bottom: 5%;
         display: grid;
@@ -1179,18 +1221,28 @@ footer {
         width: 75vw;
         margin-bottom: 3vh;
     }
+        .card1 h1, .card2 h1, .card3 h1 {
+            font-size: 8vw;
+        }
+
+        .card1 p, .card2 p, .card3 p {
+            font-size: 2.7vw;
+        }
 
         .card3:hover:after, .card2:hover:after, .card1:hover:after {
+            padding-top: 30%;
             font-size: 3vw;
             height: 70%;
+            width: 74vw;
         }
+
 
     .card {
         width: auto;
         height: 4vh;
         padding: 3px;
         justify-self: center;
-    }
+    }        
     
     .info-card{
         height: 30vh;
