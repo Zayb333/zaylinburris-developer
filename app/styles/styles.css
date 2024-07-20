@@ -45,6 +45,7 @@ body {
     background-attachment:fixed;
     background-color: black;
     background-position-x: bottom;
+    overflow-x: hidden;
 }
 
 canvas {
