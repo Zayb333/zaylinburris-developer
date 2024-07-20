@@ -40,7 +40,7 @@
 body {
     font-family: 'francise', Lucida Sans, sans-serif;
     background-image: url("background1.jpg");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: 100%;
     background-attachment:fixed;
     background-color: black;
@@ -134,6 +134,7 @@ a:visited {
     display: inline-block;
     align-self: baseline;
     margin-right: 3vw;
+    z-index: 999;
 }
 
 /* Style the dropdown button */
@@ -1054,6 +1055,7 @@ footer {
     }
     header {
         width: 100vw;
+        transform: translateX(22px);
     }
     .dropbtn {
         width: 8vw;
@@ -1095,7 +1097,6 @@ footer {
       }
 
     .title-txt {
-        z-index: 100;
         transform: translateY(-350%);
         width: 100%;
     }
@@ -1317,6 +1318,7 @@ footer {
         padding: 20px;
         width: 73vw;
         margin-top: 5%;
+        overflow-x: hidden;
     }
 
         .prj-card h1 {
