@@ -367,7 +367,7 @@ footer {
     }
     .d-cont:after {
         content: "";
-        background-image: url("../../app_data/texture.png");
+        /*background-image: url("../../app_data/texture.png");*/
         height: 300%;
         width: 300%;
         top: 0;
@@ -762,7 +762,7 @@ footer {
         content: "•c# \A    -asp.net \A    -razor pages \A -wpf \A\A •vanilla javascript \A    -express.js \A  -three.js \A    -alpine.js \A   -jQuery \A  -React.js \A    -css \A\A •python \A    -pandas \A   -numPy \A\A •c \A •c++ \A\A •visual basic for applications";
         height: 90%;
         padding-left: 4%;
-        padding-top: 25%;
+        padding-top: 16vh;
         overflow-x: auto;
         white-space: pre-line;
     }
@@ -822,7 +822,7 @@ footer {
         content: "•web development\A\A•desktop application development\A\A•backend development\A\A•frontend development\A\A•interactive and responsive design/development\A\A•3d development\A\A•texturing & animation\A\A•app design\A\A•effective customer communication for requiements gathering, ideas generation, solution planning, progress updates, and solution deployment";
         height: 90%;
         padding-left: 4%;
-        padding-top: 25%;
+        padding-top: 16vh;
         overflow-x: auto;
         white-space: pre-line;
     }
@@ -881,7 +881,7 @@ footer {
         content: "•creating automation software for gas turbine power plants\A\A•building web apps/websites with javascript and asp.net\A\A•deploying and managing web apps in azure\A\A•scrum master/team lead\A\A•development lead\A\A•project lead\A\A•data system owner gathering export controlled data for gas turbine combustion r&d";
         height: 90%;
         padding-left: 4%;
-        padding-top: 20%;
+        padding-top: 15vh;
         overflow-x: auto;
         white-space: pre-line;
     }
@@ -1123,7 +1123,7 @@ footer {
 
         .d-cont:after {
             content: "";
-            background-image: url("../../app_data/texture.png");
+            /*background-image: url("../../app_data/texture.png");*/
             height: 300%;
             width: 300%;
             top: 0;
@@ -1319,7 +1319,7 @@ footer {
         padding: 20px;
         width: 73vw;
         margin-top: 5%;
-        overflow-x: hidden;
+        overflow-x: auto;
     }
 
         .prj-card h1 {
