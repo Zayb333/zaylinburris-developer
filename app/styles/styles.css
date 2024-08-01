@@ -598,7 +598,7 @@ footer {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-
+    width: 50vw;
 }
 
 .vert-scrolling-wrapper {
