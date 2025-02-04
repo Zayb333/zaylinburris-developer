@@ -551,17 +551,17 @@ footer {
     padding: 20px;
     position: center;
     align-items: center;
-    width: 30vw;
+    width: 99%;
     margin-top: 5%;
     z-index: 3;
 }   
     .prj-card h1{
-        max-width: 28vw;
+        max-width: 75vw;
     }
     .prj-card h2 {
         color: #646464;
         font-size: 0.9vw;
-        max-width: 28vw;
+        max-width: 80vw;
         margin-top: 1vh;
     }
     .prj-card .white-p {
@@ -1327,27 +1327,27 @@ footer {
 
     .prj-card {
         padding: 20px;
-        width: 73vw;
+        width: 95vw;
         margin-top: 5%;
         overflow-x: auto;
     }
 
         .prj-card h1 {
-            max-width: 72vw;
+            max-width: 90vw;
         }
 
         .prj-card h2 {
             font-size: 2.5vw;
-            max-width: 72vw;
+            max-width: 90vw;
         }
 
         .prj-card .white-p {
-            width: 72vw;
+            width: 90vw;
         }
 
         .prj-card .white-p1 {
             height: 100%;
-            width: 72vw;
+            width: 90vw;
             white-space: pre-line;
             margin-bottom: 2%;
         }
