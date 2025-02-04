@@ -549,30 +549,29 @@ footer {
 
 .prj-card {
     padding: 20px;
-    position: center;
-    align-items: center;
-    width: 99%;
+    width: 92vw;
     margin-top: 5%;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
 }   
     .prj-card h1{
-        max-width: 75vw;
+        max-width: 99%;
     }
     .prj-card h2 {
         color: #646464;
         font-size: 0.9vw;
-        max-width: 80vw;
         margin-top: 1vh;
     }
     .prj-card .white-p {
-        width: 39vw;
+        width: 99%;
         text-wrap: normal; 
         overflow-x: auto;    
     }
     .prj-card .white-p1 {
         color: white;
         height: 100%;
-        width: 29vw;
+        width: 50vw;
         white-space: pre-line;
         text-wrap: none; /* Prevent text from wrapping */
         margin-bottom: 2%;
@@ -608,7 +607,7 @@ footer {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 50vw;
+    width: 99%;
 }
 
 .vert-scrolling-wrapper {
@@ -1327,7 +1326,7 @@ footer {
 
     .prj-card {
         padding: 20px;
-        width: 95vw;
+        width: 98vw;
         margin-top: 5%;
         overflow-x: auto;
     }
